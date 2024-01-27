@@ -10,4 +10,16 @@ ___
 ___
 
 ## Live Version
-[The Design live]()
+[The Design live](https://ryanabdaul.github.io/Testimonials-Grid-Section/)
+___
+### Learnings
+- There are 5 ways to not do this design.
+- No need to be perfect while making and trying to make it like the international Companies.
+___
+## Made By
+
+**Github account:** [Ryan Abdaulaziz](https://github.com/RyanAbdaul).
+
+**Frontend mentor account:** [Ryan Abdaulaziz](https://www.frontendmentor.io/profile/RyanAbdaul).
+
+**Instagram:** [Ryan Abdaulaziz]().
