@@ -1,0 +1,164 @@
+/* Start Global rules */
+:root {
+  --Moderate-violet: hsl(263, 55%, 52%);
+  --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(0, 0%, 81%);
+  --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+::selection {
+  color: var(--White-);
+  background-color: var(--Moderate-violet);
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+p {
+  Font-size: 13px;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--Light-grayish-blue);
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  padding: 20px;
+}
+.testimonials {
+  width: 1200px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 30px;
+}
+@media (max-width: 1199px) {
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+/* End Global rules */
+/* Start The Design */
+
+.testimonials img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.testimonials > div {
+  padding: 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.testimonials > div::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  background-color: rgb(255 255 255 / 20%);
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+}
+.testimonials > div:hover::before {
+  animation: flashing 0.7s;
+  -webkit-animation: flashing 0.7s;
+}
+.testimonials > div .head {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.testimonials > div .head .name span:first-child {
+  display: block;
+  color: hsl(210, 46%, 95%);
+}
+.testimonials > div .head .name span:last-child {
+  color: hsla(210, 46%, 95%, 0.525);
+}
+.testimonials > div h4 {
+  font-size: 20px;
+  color: var(--Light-grayish-blue);
+  margin-bottom: 15px;
+}
+.testimonials > div p {
+  line-height: 1.5;
+  color: hsla(210, 46%, 95%, 0.711);
+  font-size: 13px;
+}
+.testimonials .testi-one {
+  background-color: var(--Moderate-violet);
+  grid-row: span 4;
+  grid-column: span 6;
+}
+.testimonials .testi-two {
+  background-color: var(--Very-dark-grayish-blue);
+  grid-row: span 4;
+  grid-column: span 3;
+}
+.testimonials .testi-three {
+  background-color: white;
+  grid-row: span 8;
+  grid-column: span 3;
+}
+.testi-three .name span:first-child,
+.testi-four .name span:first-child,
+.testi-three h4,
+.testi-four h4 {
+  color: var(--Very-dark-blackish-blue) !important;
+}
+.testi-three .name span:last-child,
+.testi-four .name span:last-child,
+.testi-three p,
+.testi-four p {
+  color: var(--Very-dark-grayish-blue) !important;
+}
+.testimonials .testi-four {
+  background-color: white;
+  grid-column: span 3;
+  grid-row: span 4;
+}
+.testimonials .testi-five {
+  background-color: var(--Very-dark-blackish-blue);
+  grid-column: span 6;
+  grid-row: span 4;
+}
+/* End The Design */
+/* Start Animation */
+@keyframes flashing {
+  0%, 40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 200%;
+    height: 200%;
+  }
+}
+
+/* End Animation */
+
