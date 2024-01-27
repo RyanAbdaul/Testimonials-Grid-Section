@@ -22,4 +22,4 @@ ___
 
 **Frontend mentor account:** [Ryan Abdaulaziz](https://www.frontendmentor.io/profile/RyanAbdaul).
 
-**Instagram:** [Ryan Abdaulaziz]().
+**Instagram:** [Ryan Abdaulaziz](https://www.instagram.com/ryan.abdaul/).
